@@ -13,10 +13,15 @@ The Contract is based on ERC20 Token Standard.
 ### Coin specifications:
 
 Token name - Crypto Securities Token
+
 Token Symbol - CSX
+
 Decimals allowed - 7
+
 CSX Token Total Supply - 100,000,000
+
 Price - 1 USD per Token
+
 HardCap - 49000000 USD
 
 ## How Does A Crypto Securities Token Contract Work?
@@ -26,25 +31,29 @@ The address which deployed the Smart Contract becomes the Owner of the Smart Con
 
   
 ### Start PREICO:  
-**start_PREICO** function needs to be called by the Owner of the Smart Contract to start the PREICO.
-The preICO runs for 39 days.
-1 USD = 1 CSX coin
-Ether can be transferred to the Smart Contract address  (from account other than the Owner’s account).
-Once hard Cap of 49000000 USD is reached OR 39 days are completed, the smart contract can no more accept any ether.
-Note:  No Tokens will be distributed during the ICO, all the tokens will be distributed manually by the Owner after ICO ends.
+**start_PREICO** function needs to be called by the Owner of the Smart Contract to start the PREICO. The preICO runs for 39 days.
 
-**start_ICO** function needs to be called by the Owner of the Smart Contract to start the ICO.
-The preICO runs for 31 days.
 1 USD = 1 CSX coin
-Ether can be transferred to the Smart Contract address  (from account other than the Owner’s account).
+
+Ether can be transferred to the Smart Contract address **(from account other than the Owner’s account)**.
+Once hard Cap of 49000000 USD is reached or 39 days are completed, the smart contract can no more accept any ether.
+
+
+### Start ICO:  
+**start_ICO** function needs to be called by the Owner of the Smart Contract to start the ICO. The preICO runs for 31 days.
+
+1 USD = 1 CSX coin
+
+Ether can be transferred to the Smart Contract address **(from account other than the Owner’s account)**.
 Once hard Cap of 49000000 USD is reached OR 31 days are completed, the smart contract can no more accept any ether.
-Note:  No Tokens will be distributed during the ICO, all the tokens will be distributed manually by the Owner after ICO ends.
 
 ### End ICO: 
-**end_ICO** function needs to be called by the Owner of the Smart Contract to end the ICO.
-Any tokens left in the Smart Contract will be burnt here.
+**end_ICO** function needs to be called by the Owner of the Smart Contract to end the ICO. Any tokens left in the Smart Contract will be burnt here.
+
 TotalSupply = 100,000,000  CSX Coins 
+
 Balances Smart Contract = 0  CSX Coins 
+
 **Note**:   end_ICO(  ) should be called only after  ICO crowdsale gets completed / Hard Cap of 49000000 USD is reached.
 
 ### Token Balance
