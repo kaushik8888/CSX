@@ -108,12 +108,14 @@ The **balanceOf()** will now return following values:
 * balanceOf(0x111) will return 60
 * balanceOf(0x222) will return 90
 
-### NOTE : 
+### Note : 
 The above two addresses(0X111, 0X222) taken in Example are not Valid Ethereum Addresses, to make transaction you need to have a valid Ethereum Address.
      
 ## Important Functions
-**EmergencyStop( )**: Only Owner of the Smart contract can call this function to Pause the Crowdsale at any phase.
-**ResumeEmergencyStop( )**: Only Owner of the Smart contract can call this function to Resume the Crowdsale at any phase.
+**PauseICO( )**: Only Owner of the Smart contract can call this function to Pause the Crowdsale at any phase.
+
+**ResumeICO( )**: Only Owner of the Smart contract can call this function to Resume the Crowdsale at any phase.
+
 **drain( )**: Owner can transfer all the Ether from the Smart contract anytime using this function in case there is any Ether left in the Smart Contract.
 
 
