@@ -8,10 +8,9 @@ The Contract is based on ERC20 Token Standard.
 ## What is this repository for?
 *Crypto Securities Token* ICO contract.
 
-##Flow Chart
-##CSX Coin
+## Flow Chart CSX Coin
 
-###Coin specifications:
+### Coin specifications:
 
 Token name - Crypto Securities Token
 Token Symbol - CSX
@@ -26,7 +25,7 @@ Deploy the above *CSX.sol* smart contract and obtain its address.
 The address which deployed the Smart Contract becomes the Owner of the Smart Contract.
 
   
-###Start PREICO:  
+### Start PREICO:  
 **start_PREICO** function needs to be called by the Owner of the Smart Contract to start the PREICO.
 The preICO runs for 39 days.
 1 USD = 1 CSX coin
@@ -41,14 +40,14 @@ Ether can be transferred to the Smart Contract address  (from account other than
 Once hard Cap of 49000000 USD is reached OR 31 days are completed, the smart contract can no more accept any ether.
 Note:  No Tokens will be distributed during the ICO, all the tokens will be distributed manually by the Owner after ICO ends.
 
-###End ICO: 
+### End ICO: 
 **end_ICO** function needs to be called by the Owner of the Smart Contract to end the ICO.
 Any tokens left in the Smart Contract will be burnt here.
 TotalSupply = 100,000,000  CSX Coins 
 Balances Smart Contract = 0  CSX Coins 
 **Note**:   end_ICO(  ) should be called only after  ICO crowdsale gets completed / Hard Cap of 49000000 USD is reached.
 
-###Token Balance
+### Token Balance
 To check the token balance of token holder, **balanceOf()** function needs to be used.
 For example, assume the CSX contract has two token holders:
 * 0x111 with a balance of 50 CSX
@@ -99,10 +98,10 @@ The **balanceOf()** will now return following values:
 * balanceOf(0x111) will return 60
 * balanceOf(0x222) will return 90
 
-###NOTE : 
+### NOTE : 
 The above two addresses(0X111, 0X222) taken in Example are not Valid Ethereum Addresses, to make transaction you need to have a valid Ethereum Address.
      
-##Important Functions
+## Important Functions
 **EmergencyStop( )**: Only Owner of the Smart contract can call this function to Pause the Crowdsale at any phase.
 **ResumeEmergencyStop( )**: Only Owner of the Smart contract can call this function to Resume the Crowdsale at any phase.
 **drain( )**: Owner can transfer all the Ether from the Smart contract anytime using this function in case there is any Ether left in the Smart Contract.
