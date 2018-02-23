@@ -3,6 +3,7 @@
 # README
 
 *CSX.sol* is a fixed supply contract with a fixed supply of 100000000, Out of which 51000000 Tokens are initially assigned to the owner of the contract and 49000000 Tokens are available for the Crowdsale.
+
 The Contract is based on ERC20 Token Standard.
 
 ## What is this repository for?
@@ -30,7 +31,7 @@ Deploy the above *CSX.sol* smart contract and obtain its address.
 The address which deployed the Smart Contract becomes the Owner of the Smart Contract.
 
   
-### Start PREICO:  
+### Start PREICO  
 **start_PREICO** function needs to be called by the Owner of the Smart Contract to start the PREICO. The preICO runs for 39 days.
 
 1 USD = 1 CSX coin
@@ -39,7 +40,7 @@ Ether can be transferred to the Smart Contract address **(from account other tha
 Once hard Cap of 49000000 USD is reached or 39 days are completed, the smart contract can no more accept any ether.
 
 
-### Start ICO:  
+### Start ICO
 **start_ICO** function needs to be called by the Owner of the Smart Contract to start the ICO. The preICO runs for 31 days.
 
 1 USD = 1 CSX coin
@@ -47,7 +48,7 @@ Once hard Cap of 49000000 USD is reached or 39 days are completed, the smart con
 Ether can be transferred to the Smart Contract address **(from account other than the Owner’s account)**.
 Once hard Cap of 49000000 USD is reached OR 31 days are completed, the smart contract can no more accept any ether.
 
-### End ICO: 
+### End ICO
 **end_ICO** function needs to be called by the Owner of the Smart Contract to end the ICO. Any tokens left in the Smart Contract will be burnt here.
 
 TotalSupply = 100,000,000  CSX Coins 
